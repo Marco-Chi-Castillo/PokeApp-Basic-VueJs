@@ -17,8 +17,10 @@ getData("https://pokeapi.co/api/v2/pokemon");
 
         <div v-if="data">
             <div>
-                <button :disabled="!data.previous" @click="getData(data.previous)" type="button" class="btn btn-success me-3">Previus</button>
-                <button :disabled="!data.next"  @click="getData(data.next)" type="button" class="btn btn-success">Next</button>
+                <button :disabled="!data.previous" @click="getData(data.previous)" type="button"
+                    class="btn btn-success me-3">Previus</button>
+                <button :disabled="!data.next" @click="getData(data.next)" type="button"
+                    class="btn btn-success">Next</button>
             </div>
             <div class="d-flex flex-wrap flex-row">
                 <template v-for="pokemon in data?.results">

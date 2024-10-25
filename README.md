@@ -7,6 +7,7 @@ Example
     - Routers
     - Composables
     - Apis
+    - Composition Api
 
 ## Recommended IDE Setup
 
